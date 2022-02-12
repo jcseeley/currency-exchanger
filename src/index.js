@@ -15,7 +15,8 @@ $('form#exchange').submit(function(event) {
     const result = JSON.parse(response);
     $('#conversion').text(`Conversion rate: 1 USD = ${result.conversion_rate}` + " " + currency);
     $('#value').text("Conversion Result: " + amount + " USD = " + `${result.conversion_result}` + " " + currency);
-  }, function(error) {
-    $('#error').text(`There was an error processing your request: ${error}`);
+  }, function(result) {
+    $('#error').text("There was an error processing your request: " + result["error-type"]);
+    console.log(result);
   });
 });
