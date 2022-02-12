@@ -5,7 +5,16 @@
 </head>
 <body>
   <div class="container">
-    <h1>tCurrency Exchanger</h1>
+    <h1>Currency Exchanger</h1>
+    <form class="form-inline" id="exchange">
+      <label for="currency">Enter 3 digit currency code:</label>
+      <input type="text" id="currency" placeholder="Enter Currency Code">
+      <label for="amount">Enter amount to be converted:</label>
+      <input type="number" id="amount" placeholder="Enter USD Amount">
+      <button type="submit" class="btn-success">Convert</button>
+    </form>
+    <h6 id="conversion">Conversion</h6>
+    <h6 id="value">Value</h6>
   </div>
 </body>
 </html>
