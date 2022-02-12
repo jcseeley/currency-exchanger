@@ -8,15 +8,20 @@ $('form#exchange').submit(function(event) {
   event.preventDefault();
   let amount = $('#amount').val();
   let currency = $('#currency').val();
-  console.log(amount);
-  console.log(currency);
-  let promise = Exchanger.getExchange(currency, amount);
-  promise.then(function(response) {
-    const result = JSON.parse(response);
-    $('#conversion').text(`Conversion rate: 1 USD = ${result.conversion_rate}` + " " + currency);
-    $('#value').text("Conversion Result: " + amount + " USD = " + `${result.conversion_result}` + " " + currency);
-  }, function(result) {
-    $('#error').text("There was an error processing your request: " + result["error-type"]);
-    console.log(result);
-  });
+  checkFields(amount, currency);
+  function checkFields(amount, currency) {
+    if (amount === '' || currency === '') {
+      return $('#error').text("Please enter a currency code and a number.");
+    } else {
+      let promise = Exchanger.getExchange(currency, amount);
+      promise.then(function(response) {
+        const result = JSON.parse(response);
+        $('#rate').text(parseFloat(result.conversion_rate).toFixed(2) + " " + currency);
+        $('#value').text(amount + " USD = " + parseFloat(result.conversion_result).toFixed(2) + " " + currency);
+      }, function(response) {
+        const result = JSON.parse(response);
+        $('#error').text(result["error-type"]);
+      });
+    }
+  } 
 });

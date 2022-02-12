@@ -7,15 +7,15 @@
   <div class="container">
     <h1>Currency Exchanger</h1>
     <form class="form-inline" id="exchange">
-      <label for="currency">Enter 3 digit currency code:</label>
+      <label for="currency">3 Digit Currency Code:</label>
       <input type="text" id="currency" placeholder="Enter Currency Code">
-      <label for="amount">Enter amount to be converted:</label>
+      <label for="amount">Amount To Be Converted:</label>
       <input type="number" id="amount" placeholder="Enter USD Amount">
       <button type="submit" class="btn-success">Convert</button>
     </form>
-    <h6 id="conversion">Conversion</h6>
-    <h6 id="value">Value</h6>
-    <h6 id="error">Error</h6>
+    <h6>There was an error processing your request: <span id="error"></span></h6>
+    <h6>Conversion Rate: 1 USD = <span id="rate"></span></h6>
+    <h6>Conversion Result: <span id="value"></span></h6>
   </div>
 </body>
 </html>
