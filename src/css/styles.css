@@ -7,5 +7,10 @@ body {
   background-image: url(https://images.unsplash.com/photo-1580519541860-385b101a37e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80);
   color: black;
   font-family: Money;
-  font-size: large;
+  font-size: x-large;
+  text-align: center;
+}
+
+input {
+  text-align: center;
 }
