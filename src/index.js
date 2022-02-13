@@ -9,6 +9,7 @@ $('form#exchange').submit(function(event) {
   let amount = $('#amount').val();
   let currency = $('#currency').val();
   checkFields(amount, currency);
+  
   function checkFields(amount, currency) {
     if (amount === '' || currency === '') {
       return $('#userError').fadeIn();

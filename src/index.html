@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <title>Currency</title>
+  <title>Currency Exchanger</title>
 </head>
 <body>
   <h1>Currency Exchanger</h1>
@@ -11,7 +11,8 @@
       <input type="text" id="currency" placeholder="3 Digit Code"><br>
       <label for="amount">Enter Amount To Be Converted:</label><br>
       <input type="number" id="amount" placeholder="USD"><br>
-      <button type="submit" class="btn-success">Convert</button>
+      <button id="submit" type="submit" class="btn-success">Convert</button><br>
+      <a href="https://www.exchangerate-api.com/docs/supported-currencies">Click Here to View Currency Codes</a>
     </form>
     <div id="userError">
       <h4>Please enter a valid currency code and an amount to convert.</h4>
