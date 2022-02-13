@@ -6,25 +6,23 @@
 <body>
   <div class="container">
     <h1>Currency Exchanger</h1>
-    <div id="form">
-      <form class="form-inline" id="exchange">
-        <label for="currency">Enter Currency Code:</label>
-        <input type="text" id="currency" placeholder="3 Digit Code">
-        <label for="amount">Enter Amount To Be Converted:</label>
-        <input type="number" id="amount" placeholder="USD">
-        <button type="submit" class="btn-success">Convert</button>
-      </form>
-    </div>
+    <form id="exchange">
+      <label for="currency">Enter Currency Code:</label><br>
+      <input type="text" id="currency" placeholder="3 Digit Code"><br>
+      <label for="amount">Enter Amount To Be Converted:</label><br>
+      <input type="number" id="amount" placeholder="USD"><br>
+      <button type="submit" class="btn-light">Convert</button>
+    </form>
     <div id="userError">
       <h6>Please enter a valid currency code and an amount to convert.</h6>
     </div>
     <div id="apiErrors">
       <h6>There was an error processing your request: <span id="error"></span></h6>
     </div>
-    <div id="coversion"></div>
+    <div id="coversion">
       <h6>Conversion Rate: 1 USD = <span id="rate"></span></h6>
       <h6>Conversion Result: <span id="value"></span></h6>
-  </div>
+    </div>
   </div>
 </body>
 </html>
