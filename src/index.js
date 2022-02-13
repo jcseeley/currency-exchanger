@@ -13,11 +13,12 @@ $('form#exchange').submit(function(event) {
     if (amount === '' || currency === '') {
       return $('#userError').fadeIn();
     } else {
-      $('#userError').fadeOut();
-      $('#exchange').fadeOut();
+      $('#userError').slideUp();
       let promise = Exchanger.getExchange(currency, amount);
       promise.then(function(response) {
-        $('#conversion').fadeIn();
+        $('#apiErrors').slideUp();
+        $('#exchange').slideUp();
+        $('#conversion').slideDown();
         const result = JSON.parse(response);
         $('#rate').text(parseFloat(result.conversion_rate).toFixed(2) + " " + currency);
         $('#value').text(amount + " USD = " + parseFloat(result.conversion_result).toFixed(2) + " " + currency);

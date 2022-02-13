@@ -11,7 +11,7 @@
       <input type="text" id="currency" placeholder="3 Digit Code"><br>
       <label for="amount">Enter Amount To Be Converted:</label><br>
       <input type="number" id="amount" placeholder="USD"><br>
-      <button type="submit" class="btn-outline-success">Convert</button>
+      <button type="submit" class="btn-success">Convert</button>
     </form>
     <div id="userError">
       <h4>Please enter a valid currency code and an amount to convert.</h4>
@@ -22,6 +22,7 @@
     <div id="conversion">
       <h4>Conversion Rate: 1 USD = <span id="rate"></span></h4>
       <h4>Conversion Result: <span id="value"></span></h4>
+      <button id="reset" class="btn-success" onclick="window.location.reload();">Convert Again?</button>
     </div>
   </div>
 </body>
