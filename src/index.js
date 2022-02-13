@@ -11,7 +11,7 @@ $('form#exchange').submit(function(event) {
   checkFields(amount, currency);
   function checkFields(amount, currency) {
     if (amount === '' || currency === '') {
-      return $('#error').text("Please enter a currency code and a number.");
+      return $('#userError').text("Please enter a valid currency code and an anount to convert.");
     } else {
       let promise = Exchanger.getExchange(currency, amount);
       promise.then(function(response) {
