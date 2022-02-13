@@ -4,24 +4,24 @@
   <title>Currency</title>
 </head>
 <body>
+  <h1>Currency Exchanger</h1>
   <div class="container">
-    <h1>Currency Exchanger</h1>
     <form id="exchange">
       <label for="currency">Enter Currency Code:</label><br>
       <input type="text" id="currency" placeholder="3 Digit Code"><br>
       <label for="amount">Enter Amount To Be Converted:</label><br>
       <input type="number" id="amount" placeholder="USD"><br>
-      <button type="submit" class="btn-light">Convert</button>
+      <button type="submit" class="btn-outline-success">Convert</button>
     </form>
     <div id="userError">
-      <h6>Please enter a valid currency code and an amount to convert.</h6>
+      <h4>Please enter a valid currency code and an amount to convert.</h4>
     </div>
     <div id="apiErrors">
-      <h6>There was an error processing your request: <span id="error"></span></h6>
+      <h4>There was an error processing your request: <span id="error"></span></h4>
     </div>
-    <div id="coversion">
-      <h6>Conversion Rate: 1 USD = <span id="rate"></span></h6>
-      <h6>Conversion Result: <span id="value"></span></h6>
+    <div id="conversion">
+      <h4>Conversion Rate: 1 USD = <span id="rate"></span></h4>
+      <h4>Conversion Result: <span id="value"></span></h4>
     </div>
   </div>
 </body>

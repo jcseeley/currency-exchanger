@@ -11,15 +11,19 @@ $('form#exchange').submit(function(event) {
   checkFields(amount, currency);
   function checkFields(amount, currency) {
     if (amount === '' || currency === '') {
-      return $('#userError').show();
+      return $('#userError').fadeIn();
     } else {
+      $('#userError').fadeOut();
+      $('#exchange').fadeOut();
       let promise = Exchanger.getExchange(currency, amount);
       promise.then(function(response) {
+        $('#conversion').fadeIn();
         const result = JSON.parse(response);
         $('#rate').text(parseFloat(result.conversion_rate).toFixed(2) + " " + currency);
         $('#value').text(amount + " USD = " + parseFloat(result.conversion_result).toFixed(2) + " " + currency);
       }, function(response) {
         const result = JSON.parse(response);
+        $('#apiErrors').fadeIn();
         $('#error').text(result["error-type"]);
       });
     }
