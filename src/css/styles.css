@@ -1,4 +1,4 @@
-@keyframes animatedBackground {
+@keyframes animate {
   from {
     background-position: 0 0;
   }
@@ -9,23 +9,22 @@
 
 body {
   background-image: url('https://wallpapercave.com/wp/wp2300429.jpg');
-  background-size: 115%;
+  background-size: 105%;
   color: black;
   font-style: italic;
   font-family: monospace;
   font-size: x-large;
   text-align: center;
-  /* background-repeat: repeat-x;
-  animation: animatedBackground 3s linear infinite alternate; */
+  animation: animate 2.5s linear infinite alternate;
 }
 
 #top {
   text-decoration: underline;
-  background: rgba(76, 175, 80, 0.45);
+  background: rgba(76, 175, 80, 0.5);
 }
 
 label {
-  background: rgba(76, 175, 80, 0.45);
+  background: rgba(76, 175, 80, 0.5);
 }
 input {
   text-align: center;
@@ -38,7 +37,7 @@ input {
 #userError, #apiErrors, .conversion {
   display: none;
   color: black;
-  background: rgba(76, 175, 80, 0.45);
+  background: rgba(76, 175, 80, 0.5);
 }
 
 #reset {
