@@ -1,8 +1,8 @@
-# _{Application Name}_
+# Currency Exchanger
 
 #### By Jase Seeley
 
-#### _{Brief description of application}_
+#### Convert USD into 161 different currencies.
 
 ## Technologies Used
 * HTML
