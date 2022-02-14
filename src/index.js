@@ -19,13 +19,15 @@ $('form#exchange').submit(function(event) {
       promise.then(function(response) {
         $('#apiErrors').slideUp();
         $('#exchange').slideUp();
-        $('#conversion').slideDown();
+        $('.conversion').slideDown();
+        $('#reset').show();
         const result = JSON.parse(response);
         $('#rate').text(parseFloat(result.conversion_rate).toFixed(2) + " " + currency);
         $('#value').text(amount + " USD = " + parseFloat(result.conversion_result).toFixed(2) + " " + currency);
       }, function(response) {
         const result = JSON.parse(response);
         $('#apiErrors').fadeIn();
+        $('#error').show();
         $('#error').text(result["error-type"]);
       });
     }

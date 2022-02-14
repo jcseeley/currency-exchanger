@@ -1,19 +1,31 @@
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
 body {
-  background-image: url('https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+  background-image: url('https://images2.alphacoders.com/131/131650.jpg');
+  background-size: 115%;
   color: black;
+  font-style: italic;
   font-family: monospace;
   font-size: x-large;
   text-align: center;
+  animation: animatedBackground 5s linear infinite alternate;
 }
 
-h1 {
+#top {
   text-decoration: underline;
+  background: rgba(76, 175, 80, 0.45);
 }
 
-form {
-  background: rgba(76, 175, 80, 0.3)
+label {
+  background: rgba(76, 175, 80, 0.45);
 }
-
 input {
   text-align: center;
 }
@@ -22,17 +34,21 @@ input {
   margin-top: 1%;
 }
 
-#userError, #apiErrors, #conversion {
+#userError, #apiErrors, .conversion {
   display: none;
   color: black;
-  background-color: white;
+  background: rgba(76, 175, 80, 0.45);
+}
+
+#reset {
+  display: none;
 }
 
 a {
   color: black;
-  background-color: white;
+  background: rgba(76, 175, 80, 0.4);
 }
 
 a:hover {
-  color: red;
+  color: white;
 }

@@ -4,7 +4,7 @@
   <title>Currency Exchanger</title>
 </head>
 <body>
-  <h1>Currency Exchanger</h1>
+  <h1><span id="top">Currency Exchanger</span></h1>
   <div class="container">
     <form id="exchange">
       <label for="currency">Enter Currency Code:</label><br>
@@ -14,16 +14,11 @@
       <button id="submit" type="submit" class="btn-success">Convert</button><br>
       <a href="https://www.exchangerate-api.com/docs/supported-currencies">Click Here to View List of Valid Currency Codes</a>
     </form>
-    <div id="userError">
-      <h4>Please enter a valid currency code and an amount to convert.</h4>
-    </div>
-    <div id="apiErrors">
-      <h4>There was an error processing your request: <span id="error"></span></h4>
-    </div>
-    <div id="conversion">
-      <h4>Conversion Rate: 1 USD = <span id="rate"></span></h4>
-      <h4>Conversion Result: <span id="value"></span></h4>
-      <button id="reset" class="btn-success" onclick="window.location.reload();">Convert Again?</button>
+    <h4><span id="userError">Please enter a valid currency code and an amount to convert.</span></h4>
+    <h4><span id="apiErrors">There was an error processing your request: <span id="error"></span></span></h4>
+    <h4><span class="conversion">Conversion Rate: 1 USD = <span id="rate"></span></span></h4>
+    <h4><span class="conversion">Conversion Result: <span id="value"></span></span></h4>
+    <button id="reset" class="btn-success" onclick="window.location.reload();">Convert Again?</button>
     </div>
   </div>
 </body>
