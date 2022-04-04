@@ -2,7 +2,8 @@
 
 #### By Jase Seeley
 
-#### Convert USD into 161 different currencies.
+#### Epicodus Week #6 Independent Code Review: Asynchrony and APIs  
+* Convert USD into 161 different currencies.
 
 ## Technologies Used
 * HTML
