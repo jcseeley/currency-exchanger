@@ -21,7 +21,8 @@
 Convert USD into one of 161 different foreign currencies. Simply enter a supported 3 digit currency code (link to list below form) and an amount to be converted then click the "Convert" button. The converter will show you the 1 USD exchange rate as well as the total value of your specified amount.
 ## Setup/Installation Requirements
 
-* Use of this page requires a valid API Key.
+* Visit https://jcseeley.github.io/currency-exchanger in your browser.
+* Otherwise, use of this page requires a valid API Key.
 * Visit https://www.exchangerate-api.com/ and enter your email address to sign up for the "Free Plan"
 * You will receive a validation email. Follow the link in the email to verify your email address and receive your free API key.
 * Clone this repository to your desktop.
