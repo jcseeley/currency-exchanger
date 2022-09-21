@@ -5,6 +5,8 @@
 #### Epicodus Week #6 Independent Code Review: Asynchrony and APIs  
 * Convert USD into 161 different currencies.
 
+![Webpage Screenshot](./currencyExchanger.png)
+
 ## Technologies Used
 * HTML
 * CSS
